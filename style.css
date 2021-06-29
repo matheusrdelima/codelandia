@@ -1,0 +1,130 @@
+:root {
+  --blue: #3ea1db;
+  --blue-dark: #574ae8;
+  --white: #fff;
+  --background: #f3f5f7;
+  --title: #313131;
+  --text: #b6b6b6;
+
+  --linear: linear-gradient(90deg, #574ae8 0%, #3ea1db 100%);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  outline: 0;
+}
+
+@font-face {
+  font-family: "LexendDeca-Regular";
+  src: url("assets/fonts/LexendDeca-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Inter-Regular";
+  src: url("assets/fonts/Inter-Regular.ttf");
+}
+
+body {
+  background-color: var(--background);
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+}
+
+header .container {
+  background: var(--linear);
+}
+
+.container article {
+  max-width: 900px;
+  padding-left: 30px;
+  padding-right: 30px;
+  height: 250px;
+  margin: 0 auto;
+}
+
+.container article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.container article nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container article nav ul a {
+  font-family: "LexendDeca-Regular";
+  font-size: 24;
+  color: var(--white);
+}
+
+.container article input {
+  font-family: "Inter-Regular";
+  padding: 20px 20px 20px 55px;
+  width: 100%;
+  height: 65px;
+  border: 0;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.2) url("/assets/images/search.png")
+    no-repeat 20px 20px;
+  color: var(--text);
+}
+
+input::placeholder {
+  color: var(--text);
+}
+
+main .container {
+  width: 100%;
+  height: 100%;
+  padding: 0 30px 50px 30px;
+}
+
+main .container article:first-child {
+  margin-top: 80px;
+}
+
+main .container article {
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.1);
+  height: 100%;
+  background-color: var(--white);
+  border-radius: 5px;
+  margin-top: 50px;
+  padding: 30px;
+}
+
+.container article header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container article header span {
+  font-family: "LexendDeca-Regular";
+  font-size: 16px;
+  color: var(--text);
+}
+
+.container article h1 {
+  margin-top: 30px;
+  font-family: "LexendDeca-Regular";
+  font-size: 26px;
+  line-height: 32px;
+  color: var(--title);
+}
+
+.container article p {
+  margin-top: 20px;
+  font-family: "LexendDeca-Regular";
+  font-size: 18px;
+  line-height: 32px;
+  color: var(--text);
+}
