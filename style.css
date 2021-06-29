@@ -127,4 +127,5 @@ main .container article {
   font-size: 18px;
   line-height: 32px;
   color: var(--text);
+  text-align: justify;
 }
